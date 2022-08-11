@@ -5,6 +5,8 @@ import Router from "koa-router";
 import cors from "koa-cors";
 
 import { version } from "../package.json";
+import { userPost } from "./api/user/userPost";
+import routerUser from "./shared/routes/userRoutes";
 
 const app = new Koa();
 
@@ -22,6 +24,10 @@ routerOpen.get("/api/version", (ctx) => {
   };
 });
 
+routerOpen.post("/api/user", userPost);
+
+app.use(routerOpen.routes());
+app.use(routerUser.routes());
 
 app.use((ctx) => {
   ctx.status = 404;
