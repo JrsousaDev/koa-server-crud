@@ -4,12 +4,12 @@ import logger from "koa-logger";
 import Router from "koa-router";
 import cors from "koa-cors";
 
-import { version } from "../package.json";
-import { userPost } from "./api/user/userPost";
-import { auth } from "./auth/auth";
-import { authLogin } from "./api/auth/authLogin";
-
 import routerUser from "./shared/routes/userRoutes";
+
+import { version } from "../package.json";
+import { authLogin } from "./api/auth/authLogin";
+import { auth } from "./auth/auth";
+import { userPost } from "./api/user/userPost";
 
 const app = new Koa();
 
