@@ -7,9 +7,9 @@ import cors from "koa-cors";
 import routerUser from "./shared/routes/userRoutes";
 
 import { version } from "../package.json";
-import { userPost } from "./api/user/userPost";
-import { auth } from "./auth/auth";
 import { authLogin } from "./api/auth/authLogin";
+import { auth } from "./auth/auth";
+import { userPost } from "./api/user/userPost";
 
 const app = new Koa();
 

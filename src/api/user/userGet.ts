@@ -1,5 +1,4 @@
-
-import { getObjectId } from "../../../test/getObjectId";
+import { getObjectId } from "../../../test";
 import User from "../../modules/user/UserModel";
 
 export const userSelection = {

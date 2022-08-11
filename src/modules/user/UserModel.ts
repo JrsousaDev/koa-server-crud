@@ -37,11 +37,11 @@ export interface IUser extends Document {
   name: string;
   email: string;
   password: string;
+  removedAt: Date | null;
   authenticate: (plainTextPassword: string) => boolean;
   encryptPassword: (password: string | undefined) => string;
   createdAt: Date;
   updatedAt: Date;
-  removedAt: Date | null;
 }
 
 UserSchema.pre<IUser>("save", function encryptPasswordHook(next) {

@@ -1,6 +1,6 @@
 import { Model, Types } from "mongoose";
 import { Context } from "koa";
-import { getObjectId } from "../../test/getObjectId";
+import { getObjectId } from "../../test";
 
 export const getSkipAndLimit = (ctx: Context) => {
   const { skip = 0, limit = 100 } = ctx.query;

@@ -1,5 +1,5 @@
 import { Base64String, unbase64 } from "./base64";
-import { getObjectId } from "../../test/getObjectId";
+import { getObjectId } from "../../test";
 
 import User from "../modules/user/UserModel";
 import jwt_decode from "jwt-decode";
