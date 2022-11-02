@@ -1,1 +1,0 @@
-export { getObjectId } from "./getObjectId";
